@@ -6,7 +6,7 @@
 	public class protagonista extends MovieClip{
 		private var izq: Boolean=false;
 		private var der: Boolean=false;
-		private var vel: int=10;
+		private var vel: int=20;
 		private var lim_x_der: int=510;
 		private var lim_x_izq: int=40;
 		public function protagonista() {
