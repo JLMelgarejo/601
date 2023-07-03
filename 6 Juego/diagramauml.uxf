@@ -1,0 +1,44 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>330</x><y>30</y><w>160</w><h>70</h></coordinates><panel_attributes>Movieclip
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>40</x><y>350</y><w>270</w><h>200</h></coordinates><panel_attributes>antagonista
+--
+ private var limite_der: int = 520;
+		private var limite_izq: int = 32;
+		private var dir: Number = 1;
+		private var vel: int = 10;
+		private var cambia: Timer = new Timer(200,0);
+		private var tipo: Number;
+		private var lanzar: Timer= new Timer(750,0);
+--
+public function antagonista()
+public function cambia_dir(e:TimerEvent)
+public function actualiza
+public function lanza_bala(e:TimerEvent)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>350</y><w>280</w><h>190</h></coordinates><panel_attributes>protagonista
+--
+private var izq: Boolean=false;
+private var der: Boolean=false;
+private var vel: int=20;
+private var lim_x_der: int=510;
+private var lim_x_izq: int=40;
+--
+public function protagonista()
+public function motor (e:Event) :void
+public function controles()
+public function keydown(e: KeyboardEvent):void
+public function keyup (e:KeyboardEvent):void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>620</x><y>350</y><w>210</w><h>190</h></coordinates><panel_attributes>bala
+--
+private var vel: Number=10;
+public function bala(pos_x, pos_y)
+--
+public function bala(pos_x, pos_y)
+public function mover (e:Event)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>250</x><y>140</y><w>390</w><h>150</h></coordinates><panel_attributes>setup
+--
+private var fondo_new: fondo=new fondo();
+private var piso_new: piso=new piso();
+static var protagonista_new: protagonista=new protagonista();
+private var antagonista_new: antagonista=new antagonista ();
+static var puntos: Number=0;
+static var puntos_box_new: puntos_box=new puntos_box();
+--
+public function actualiza_puntos(e:Event)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>390</x><y>90</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;50;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>80</x><y>90</y><w>340</w><h>280</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;260;10;10;320;10</additional_attributes></element><element><id>Relation</id><coordinates><x>450</x><y>90</y><w>260</w><h>280</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;260;10;210;240;210;240;40;10;40;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>170</x><y>280</y><w>300</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;70;10;20;280;20;280;10</additional_attributes></element><element><id>Relation</id><coordinates><x>440</x><y>290</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>430</x><y>290</y><w>320</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>300;60;300;10;10;10</additional_attributes></element></diagram>
