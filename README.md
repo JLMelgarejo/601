@@ -8,3 +8,15 @@
  3 V2TRIFIV
  4 V3TRIFIV
  5 V4TRIFIV
+
+Unidad 2
+Excepciones 1
+Excepciones 2
+Excepciones 3
+Excepciones 4
+Excepciones 5
+ArrayIndexOutBoundExeption
+
+Unidad3
+Chat/uso de hilos/ uso de sockest
+
